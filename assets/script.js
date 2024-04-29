@@ -32,7 +32,7 @@ submitButton.addEventListener('click', function (event) {
     alert('error', 'Content cannot be blank');
   } 
   if (userName.value && titleName.value && contentText.value) {
-    window.location.href = "challenge-04-mbd/assets/blogposts.html" // linking to the second HTML page
+    window.location.href = "./blogposts.html" // linking to the second HTML page
   }
 
 
