@@ -21,6 +21,7 @@ submitButton.addEventListener('click', function (event) {
     contentText: contentTextArray,
 
   };
+  
 
   if (userName.value === '') {
     alert('error', 'Username cannot be blank'); //fix if statement
@@ -32,15 +33,11 @@ submitButton.addEventListener('click', function (event) {
     alert('error', 'Content cannot be blank');
   } 
   if (userName.value && titleName.value && contentText.value) {
+    localStorage.setItem("Username", blogPost.userName);
+    localStorage.setItem("Title", blogPost.titleName);
+    localStorage.setItem("Content", blogPost.contentText);
     window.location.href = "./blogposts.html" // linking to the second HTML page
   }
-
-
-  localStorage.setItem("Username", JSON.stringify(blogPost.userName));
-  localStorage.setItem("Title", JSON.stringify(blogPost.titleName));
-  localStorage.setItem("Content", JSON.stringify(blogPost.contentText));
-  
-
 
 
 

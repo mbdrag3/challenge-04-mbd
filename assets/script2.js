@@ -28,9 +28,9 @@ function saveUserResponses() {
     let userLocal = localStorage.getItem("Username");
     let titleLocal = localStorage.getItem("Title");
     let contentLocal = localStorage.getItem("Content");
-    userNameComplete.textContent = JSON.parse(userLocal);
-    titleComplete.textContent = JSON.parse(titleLocal);
-    contentComplete.textContent = JSON.parse(contentLocal);
+    userNameComplete.textContent = userLocal;
+    titleComplete.textContent = titleLocal;
+    contentComplete.textContent = contentLocal;
     return
   }
 
